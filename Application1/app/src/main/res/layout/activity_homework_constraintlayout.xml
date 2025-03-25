@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h_390"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="390dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="65dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登入"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_65"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h_390" />
+
+    <Button
+        android:id="@+id/button_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="註冊"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/button_01"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h_390" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_h_390"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="學生"
+            android:textSize="18sp"
+            android:layout_marginEnd="5dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教師"
+            android:layout_marginEnd="5dp"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="職工"
+            android:layout_marginEnd="5dp"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textview_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="密碼："
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/radiogroup_01"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v_20" />
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="請輸入密碼"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/textview_password"
+        app:layout_constraintLeft_toRightOf="@id/textview_password" />
+
+
+    <TextView
+        android:id="@+id/textview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="帳號："
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/textview_password"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v_20" />
+
+    <EditText
+        android:id="@+id/edittext_id"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="請輸入帳號"
+        android:text=""
+        android:textColorHint="#646464"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/textview_id"
+        app:layout_constraintLeft_toRightOf="@id/textview_id" />
+
+    <ImageView
+        android:id="@+id/imageview_01"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/kpptr"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高屏澎東分署登入畫面"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

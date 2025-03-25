@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按鈕一"
+        android:textColor="#ED2727"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="按鈕二"
+        android:textColor="#6161FB"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/button_blue"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="按鈕三"
+        android:backgroundTint="#D1C2EB"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="按鈕四-背景色"
+        android:textColor="#6161FB"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/button_pressed_blue"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="按鈕五-前景色"
+        android:textColor="@drawable/button_text_pressed_white"
+        android:backgroundTint="#FA1503"
+        />
+
+</LinearLayout>

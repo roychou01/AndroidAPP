@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:rowCount="4"
+    android:padding="16dp">
+
+    <!-- 顯示區域 -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnSpan="4"
+        android:layout_rowSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#EDE8D0"
+        android:gravity="end|center_vertical"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="#333"
+        android:textSize="32sp" />
+
+    <!-- 按鈕 1 -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:text="1" />
+
+    <!-- 按鈕 2 -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:text="2" />
+
+    <!-- 按鈕 3 -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:text="3" />
+
+    <!-- 按鈕 . -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill"
+        android:text="." />
+
+    <!-- 按鈕 0 -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_columnSpan="2"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:text="0" />
+
+    <!-- 按鈕 = -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_columnSpan="2"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:text="=" />
+
+</GridLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL網址："
+        android:id="@+id/textview_url"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_url"
+        android:layout_marginStart="20dp"
+        android:text="https://24h.pchome.com.tw/"
+        android:inputType="text"
+        android:ems="12"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_browser"
+        android:text="啟動瀏覽器"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_dialphone"
+        android:text="撥打電話"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_map"
+        android:text="啟動地圖"
+        android:layout_margin="20dp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview_q_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1.你最常到哪一個網站?"
+        android:textSize="18sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/radiobutton_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.google.com" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.yahoo.com" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.msn.com" />
+    </RadioGroup>
+
+    <!--間隔間格-->
+    <TextView
+        android:id="@+id/textview_q_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2.你最常做的休閒活動是什麼?"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/radiobutton_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="逛街" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看電影" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打球" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textview_answer_q01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CDDC39"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textview_answer_q02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text=""
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >   <!-- 由上往下排 -->
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textColor="#F44336"
+        android:text="顯示文字練習"
+        android:background="#009688"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView練習2"
+        android:textColor="#7D04F6"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="第三組文字練習"
+        android:textColor="#0458FA"
+        android:background="#C8FD03"
+        android:textStyle="italic|bold"
+        android:textAlignment="center"
+        />
+    <!--textStyle="italic|bold" 一次給多種參數-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="第四組TextView文字練習"
+        android:gravity="end|bottom"
+        android:background="#61D9F8"
+        android:textSize="20sp"
+        />
+    <!--gravity 改變文字的位置，參數有center_horizontal, bottom|right-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="外部位置設定1"
+        android:layout_gravity="right"
+        android:background="#EEF8B4"
+        />
+    <!--layout_gravity是指個區塊的位置-->
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="外部位置設定2"
+        android:layout_gravity="center"
+        android:background="#9FA291"
+        />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="外部位置設定3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#FFEB3B"
+        android:layout_margin="10dp"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="一"
+            android:background="#FAB0E0" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="二"
+            android:background="#FF0DAA" />
+
+    </LinearLayout>
+
+</LinearLayout>

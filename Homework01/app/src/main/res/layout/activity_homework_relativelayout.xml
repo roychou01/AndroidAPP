@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="65dp"
+        android:text="登入"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="註冊"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:layout_alignTop="@id/button_01"
+        android:layout_toEndOf="@id/button_01"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_title"
+        android:text="高屏澎東分署登入畫面"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageview_01"
+        android:scaleType="fitXY"
+        android:src="@drawable/kpptr"
+        android:layout_below="@id/textview_title"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帳號："
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/imageview_01"
+       />
+
+    <EditText
+        android:id="@+id/edittext_id"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="請輸入帳號"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/textview_id"
+        android:layout_alignBaseline="@id/textview_id"
+        />
+
+    <TextView
+        android:id="@+id/textview_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密碼："
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_below="@id/textview_id"
+         />
+
+    <EditText
+        android:id="@+id/edittext_pwd"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="請輸入密碼"
+        android:text=""
+        android:textColorHint="#646464"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/textview_pwd"
+        android:layout_alignBaseline="@id/textview_pwd"
+         />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/button_01"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="學生"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="教師"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="職工"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+</RelativeLayout>
